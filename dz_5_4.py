@@ -5,6 +5,6 @@ n = int(input())
 for i in range(n):
     a.append(int(input()))
 print(*a)
-for i in range(0,n):
-    if a[i-1] < a[i]:
-        print(a[i],end='\t')
+for i in range(0,n-1):
+    if a[i] < a[i+1]:
+        print(a[i+1],end='\t')
